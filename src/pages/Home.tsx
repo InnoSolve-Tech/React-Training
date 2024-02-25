@@ -1,8 +1,8 @@
-import Links from '../components/Links'
+import Hero from '../components/Hero'
 
 function Home() {
   return (
-    <Links name='Home' link='/greet' linkTo='Greeter'/>
+    <Hero/>
   )
 }
 

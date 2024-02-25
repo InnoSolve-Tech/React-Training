@@ -1,16 +1,17 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import Greeter from './pages/Greeter';
 import Home from './pages/Home';
+import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-   
+  return ( 
   <Router>
+    <NavigationBar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/greet' element={<Greeter/>}/>
     </Routes>
+    <Footer/>
   </Router>
   );
 }
